@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption Stages</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="stages">
+    <h1> Accordion component</h1>
+    <div class="stage">
+        <button class="tab active" aria-expanded="true" aria-controls="discover-panel">
+            1. Discover
+        </button>
+
+        <section class="panel active" id="discover-panel">
+            <h2>Discover</h2>
+            <p>Learn what the platform can do and how it fits your needs.</p>
+
+            <ul>
+                <li>Watch the intro video</li>
+                <li>Explore the main features</li>
+                <li>Identify one use case to try</li>
+            </ul>
+
+            <label class="complete">
+                <input type="checkbox">
+                Mark stage complete
+            </label>
+        </section>
+    </div>
+
+    <div class="stage">
+        <button class="tab" aria-expanded="false" aria-controls="configure-panel">
+            2. Configure
+        </button>
+
+        <section class="panel" id="configure-panel">
+            <h2>Configure</h2>
+            <p>Set up your workspace and connect your tools.</p>
+
+            <ul>
+                <li>Create your first project</li>
+                <li>Invite a team member</li>
+                <li>Connect an integration</li>
+            </ul>
+
+            <label class="complete">
+                <input type="checkbox">
+                Mark stage complete
+            </label>
+        </section>
+    </div>
+
+    <div class="stage">
+        <button class="tab" aria-expanded="false" aria-controls="pilot-panel">
+            3. Pilot
+        </button>
+
+        <section class="panel" id="pilot-panel">
+            <h2>Pilot</h2>
+            <p>Test with a small group before wider rollout.</p>
+
+            <ul>
+                <li>Run a pilot with 3-5 users</li>
+                <li>Collect feedback</li>
+                <li>Document what worked</li>
+            </ul>
+
+            <label class="complete">
+                <input type="checkbox">
+                Mark stage complete
+            </label>
+        </section>
+    </div>
+
+    <div class="stage">
+        <button class="tab" aria-expanded="false" aria-controls="rollout-panel">
+            4. Roll out
+        </button>
+
+        <section class="panel" id="rollout-panel">
+            <h2>Roll out</h2>
+            <p>Expand to your full team with a clear plan.</p>
+
+            <ul>
+                <li>Create a rollout timeline</li>
+                <li>Train your team</li>
+                <li>Set up support</li>
+            </ul>
+
+            <label class="complete">
+                <input type="checkbox">
+                Mark stage complete
+            </label>
+        </section>
+    </div>
+
+    <div class="stage">
+        <button class="tab" aria-expanded="false" aria-controls="optimize-panel">
+            5. Optimize
+        </button>
+
+        <section class="panel" id="optimize-panel">
+            <h2>Optimize</h2>
+            <p>Build habits that keep the platform useful after launch.</p>
+
+            <ul>
+                <li>Review usage regularly</li>
+                <li>Onboard new starters smoothly</li>
+                <li>Retire old processes</li>
+            </ul>
+
+            <label class="complete">
+                <input type="checkbox">
+                Mark stage complete
+            </label>
+        </section>
+    </div>
+
+</div>
+<div class="lms-note">
+    <p>I wanted to see how my component would work inside an LMS with its own styles and code. I placed it inside a Bootstrap template to test this. Click below to see the demo.</p>
+    <a href="bootstrap/index.html" class="demo-link">View  Demo</a>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

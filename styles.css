@@ -1,0 +1,92 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 2rem 1rem;
+    font-family: system-ui, sans-serif;
+}
+
+.stages, .lms-note {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.stage { margin-bottom: 0.5rem; }
+
+.tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.tab::after { content: "+"; color: #888; font-size: 1.25rem; }
+.tab:hover { background: #fafafa; }
+.tab.active { background: #1a4d4d; color: white; }
+.tab.active::after { content: "−"; color: white; }
+.tab.done { background: #e8f5e9; color: #2e7d32; }
+.tab.done::before { content: "✓ "; }
+
+.tab:focus-visible, .demo-link:focus-visible {
+    outline: 3px solid #1a4d4d;
+    outline-offset: 3px;
+}
+
+.panel {
+    margin-top: 0.5rem;
+    padding: 1.5rem;
+    border-left: 4px solid #1a4d4d;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.stages.is-enhanced .panel { display: none; }
+.stages.is-enhanced .panel.active { display: block; }
+
+.panel h2 { margin-top: 0; color: #1a4d4d; }
+.panel p { color: #555; line-height: 1.5; }
+.panel ul { padding-left: 1.25rem; }
+.panel li { padding: 0.25rem 0; color: #444; }
+
+.complete {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+    color: #555;
+    cursor: pointer;
+}
+
+.complete input { accent-color: #1a4d4d; }
+
+.lms-note {
+    margin-top: 2rem;
+    padding: 1.25rem;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.lms-note p { margin: 0 0 1rem; color: #555; line-height: 1.5; }
+
+.demo-link {
+    display: inline-block;
+    padding: 0.625rem 1rem;
+    background: #1a4d4d;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.demo-link:hover { background: #2a6363; }
